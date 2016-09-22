@@ -3,10 +3,6 @@ ExesPoster
 
 ExesPoster is an exception post tool to Elasticsearch.
 
-in Japanese
------
- * [使い方](features/post_exception_to_elasticsearch.feature)
-
 Installation
 -----
 
@@ -32,7 +28,7 @@ Getting Started
 
 1. To set an environment variable "ELASTICSEARCH_URL"
   ```bash
-  export ELASTICSEARCH_URL=localhost:9200
+  $ export ELASTICSEARCH_URL=localhost:9200
   ```
 
 2. Call `ExesPoster.post_exception` with caught exception in the rescue section.
@@ -69,6 +65,11 @@ Getting Started
   }
   ```
 
+in Japanese
+-----
+ * [使い方](features/post_exception_to_elasticsearch.feature)
+
+
 Configuration
 -----
 
@@ -86,14 +87,14 @@ Test
 
 1. You set an environment variable DOCKER_HOST or ELASTICSEARCH_URL
   ```bash
-  export ELASTICSEARCH_URL=localhost:9200
+  $ export ELASTICSEARCH_URL=localhost:9200
   ```
   or
   ```bash
-  eval $(docker-machine env default)
+  $ eval $(docker-machine env default)
   ```
  
 2. Then exec rake
   ```bash
-  bundle exec rake
+  $ bundle exec rake
   ```

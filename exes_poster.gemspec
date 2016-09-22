@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ExesPoster::VERSION
   s.authors     = ["Takahiro HAMAGUCHI"]
   s.email       = ["tk.hamaguchi@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/tk-hamaguchi/exes_poster"
   s.summary     = "Exception post to Elasticsearch"
   s.description = "Exception post to Elasticsearch."
   s.license     = "MIT"
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "elasticsearch", "~> 2.0.0"
+  s.add_runtime_dependency 'elasticsearch', '~> 2.0', '>= 2.0.0'
 end
